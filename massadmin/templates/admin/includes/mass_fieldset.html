@@ -27,7 +27,7 @@
       {% endif %}
       
       {% for field in line %}
-        {% if not field.field_name in exclude_fields %}
+        {% if field.field.name not in exclude_fields %}
         <tr>
           {% if field.field.name in adminform.readonly_fields %}
             <td>
